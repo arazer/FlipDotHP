@@ -1,0 +1,10 @@
+ToDo
+1)
+	Raumsteuerung
+	- Vorerst PHP, da einfach und Bekannt
+	- Design @fabian HTML5?
+	- Anbindung der Funktion durch entsprechende Funtionsaufrufe
+2) Gestalten der FlipDot-HP "from scratch"
+	-Einbindung von Blog und Wiki
+	-evtl. Terminkalender (GoogleCal?)
+	-Raumanwesenheit?
