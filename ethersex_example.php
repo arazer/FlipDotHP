@@ -31,24 +31,8 @@ function setPort($port, $pin, $value)
         request("io set port" . $port . " " . $value . " " . $hex);	
 }
 
-request("1w convert");
 
 $response = request("1w list");
-$sensor1 = "1058a570010800e0";
-$sensor2 = "1002bc700108008e";
-$temp1 = request("1w get " . $sensor1);
-$temp2 =  request("1w get " . $sensor2); 
-	echo "Aussentemperatur: $temp1";
-	echo "<br>\n";
-	echo "Innentemperatur: $temp2";
-	echo "<br>\n";
-
-	
-	echo "$time";
-	echo "<br>\n";
-
-$temp1 = $temp1 * 10;
-$temp2 = $temp2 * 10;
 
 function request($request) {
 	$rs = fsockopen(IP, PORT);
